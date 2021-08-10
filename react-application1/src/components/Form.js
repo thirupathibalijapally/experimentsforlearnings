@@ -25,9 +25,16 @@ import React, { Component } from 'react'
             topic:event.target.value
         })
     }
+
+    handleSubmitForm =(event)=>{
+        console.log(this.state.username);
+        console.log(this.state.comments);
+        console.log(this.state.topic);
+        event.preventDefault()
+    }
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmitForm}>
             <div>
                 <label>UserName :</label>
                 <input type="text"
@@ -51,6 +58,11 @@ import React, { Component } from 'react'
                   <option value='java'>java</option>
                   <option value='.Net'>.Net</option>
                 </select>
+            </div>
+
+            <div>
+              <button>Submit</button>
+
             </div>
             </form>
         )
