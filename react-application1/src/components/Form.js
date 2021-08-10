@@ -33,26 +33,27 @@ import React, { Component } from 'react'
         event.preventDefault()
     }
     render() {
+        const {username,comments,topic} = this.state
         return (
             <form onSubmit={this.handleSubmitForm}>
             <div>
                 <label>UserName :</label>
                 <input type="text"
-                 value={this.state.username}
+                 value={username}
                  onChange={this.handleUserNameChange}>
                 </input>
             </div>
             <div>
                 <label>Comments :</label>
                 <textarea 
-                 value={this.state.comments}
+                 value={comments}
                  onChange={this.handleCommentsChange}>
                 </textarea>
             </div>
             <div>
                 <label>Topic :</label>
                 <select 
-                 value={this.state.topic}
+                 value={topic}
                  onChange={this.handleTopicChange}>
                   <option value='react'>React</option>
                   <option value='java'>java</option>
