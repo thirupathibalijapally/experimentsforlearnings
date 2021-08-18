@@ -1,0 +1,144 @@
+
+/*===========================Layout Related css=====================================*/
+body{
+    background-color: #9c9f84;
+    margin:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+}
+
+div#header{
+    background-color: #5c755e;
+    margin: 10px;
+    height: 90px;
+}
+
+
+.main{
+    background-color:#e5e4d7 ;
+    margin-right:320px ;
+    margin-left:10px;
+    margin-top:5px;
+    border-radius: 5px;
+    padding:20px;
+    font-size: 90%;
+    text-align: left;
+
+}
+
+#footer{
+    background-color: #5c755e;
+    margin: 10px;
+    height: 60px;
+    clear:both;
+    border-radius: 5px;
+    padding:15px;
+    font-size: 90%;
+    
+}
+
+/*=================================Content Related Css===========================================*/
+#nav ul{
+  list-style-type: none;
+  background-color: black;
+  margin:10px;
+  height: 30px;
+  color:white;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+#nav ul li{
+    display:inline;      
+    padding:10px
+  }
+  #nav ul li a{
+    text-decoration: none;
+    padding: .2em 1em;
+    height: 32px;
+    line-height: 30px;
+    color:white;
+    background-color: rgb(139, 68, 68);
+    border: 2px red solid;
+    border-radius: 5px;
+    
+   
+  }
+  #nav ul li a:hover{
+      background-color: white;
+      color:black;
+  }
+
+  #footer ul li{
+    display:inline;      
+    padding:10px
+  }
+  #footer ul li a{
+    text-decoration: none;
+    padding: .2em 1em;   
+    color:white;
+    background-color: rgb(139, 68, 68);
+    border: 2px red solid;
+    border-radius: 5px;
+    
+   
+  }
+  #footer ul li a:hover{
+      background-color: white;
+      color:black;
+  }
+
+  .sliderright{
+    background-color:#e5e4d7 ;
+    margin-right:10px ;
+    margin-left:10px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding:20px;
+    font-size: 105%;
+    text-align: left;
+    width: 260px;
+    float:right;
+    clear:right;
+}
+
+.imagesidebar{
+    
+    margin-right:10px ;
+    margin-left:10px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 300px;
+    float:right;
+    clear:right;
+}
+.imagesidebar:hover{
+    opacity: 0.3;
+}
+
+/*=====================================Headings Related Css===========================================*/
+h1{
+    color:red;
+    font-size: 120%;
+    
+}
+h2{
+    color:darkblue;
+    font-size: 120%;
+    
+}
+
+h3{
+    color:#efe4d7;
+    font-size: 250%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:25px;
+    margin: 0px;
+}
+
+
+

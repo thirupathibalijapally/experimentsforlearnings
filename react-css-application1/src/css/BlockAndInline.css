@@ -1,0 +1,30 @@
+h1.blockHeader1 {
+    background-color: green;
+    color:yellow;
+}
+
+p.blockpara1{
+    background-color: green;
+    color: yellow;
+}
+
+div.blockdiv{
+    background-color: green;
+    color: yellow; 
+}
+
+h2.blockHeader2{
+    background-color: green;
+    color:yellow;
+}
+
+h3.blockHeader3{
+    background-color: green;
+    color:yellow; 
+}
+p.test{
+
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+}

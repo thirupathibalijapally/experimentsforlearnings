@@ -5,13 +5,11 @@ body{
     background-color:rgb(255, 180,104);
     font-size: 25px;
     margin: 10px;
-    border-color: royalblue;
-    border-width: 2px;
-    border-style: solid;
+   
 
     
 }
-h1{
+h1.firstpageheader1{
     text-decoration: underline;
     font-size: 150%;
 }
@@ -44,6 +42,7 @@ p.para3{
     background-image: url("https://i.pinimg.com/originals/d4/d6/06/d4d6062d45c6cf749a266e4ca26ffeae.jpg");
     background-repeat: no-repeat repeat;
     background-size:cover;
+    border-radius: 10px;
 }
 
 #homepage4Id{
@@ -66,4 +65,18 @@ img.imagec{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+span.highlight{
+    color:black
+}
+
+a:link{
+    color:blue;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:gray;
 }

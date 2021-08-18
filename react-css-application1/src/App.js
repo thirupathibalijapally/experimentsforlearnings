@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import Sample1 from './components/Sample1';
+import Forms from './components/Forms';
 function App() {
   return (
     <div className="App">
-     <Sample1/>
+     <Forms/>
     </div>
   );
 }

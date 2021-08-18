@@ -1,12 +1,43 @@
 import React, { Component } from 'react'
 import   '../css/Sample1.css'
+import BlockAndInline from './BlockAndInline'
+import Shark from './Shark'
 
  class Sample1 extends Component {
+
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            isClicked:false,
+            isblockElement:false
+        }
+
+    }
+    
+    moreLinkAction=()=>{
+        this.setState({
+            isClicked:true
+        })
+    }
+
+    blockLinkAction=()=>{
+        this.setState({
+            isblockElement:true
+        })
+    }
     render() {
+        if(this.state.isClicked){
+            return <Shark/>
+        }else if(this.state.isblockElement){
+            return <BlockAndInline/>
+        }
+        
+        else{
         return (
             <div>
                 <div>
-               <h1>The Fish Web Site </h1> 
+               <h1 className="firstpageheader1">The Fish Web Site </h1> 
                <p className="blue">Welcome to the fish web site , Every thing you want to know about the Fish in this Web Site</p>
                </div>
                <div>
@@ -18,7 +49,7 @@ import   '../css/Sample1.css'
                  Keeping a healthy aquarium is not that easy as presumed by the majority,
                  Hence we aimed to educate amateur fish keepers on how to set up fish tank.
                  There are four main types of fish tank setups. 
-                 The first two being the popular freshwater and saltwater fish tanks.
+                 <span className="highlight"> The first two being the popular freshwater and saltwater fish tanks</span>.
                   The other two are the brackish and cold water tanks. Beginners often go with a freshwater fish tank because they are generally easier to care for. 
                   Products you need to set your a quarium up are readily available
                   Arowanas are freshwater bony fish of the family Osteoglossidae, also known as bony tongues. 
@@ -40,13 +71,26 @@ import   '../css/Sample1.css'
                   In this family of fish, the head is bony and the elongated body is covered by large, heavy scales,
                    with a mosaic pattern of canals. The dorsal and anal fins have soft rays and are long based, 
                    while the pectoral and ventral fins are small. 
-                   The name "bonytongues" is derived from a toothed bone on the floor of the mouth, the "tongue",
+                  The name "bonytongues"is derived from a toothed bone on the floor of the mouth, the "tongue",
                     equipped with teeth that bite against teeth on the roof of the mouth. The arowana is a facultative air breather
                      and can obtain oxygen from air by sucking it into its swim bladder, which is lined with capillaries like
                       lung tissue.</p>
+
+                      <div>
+                           <h3>More Interesting Links</h3>
+                           <a href="#" onClick={this.moreLinkAction} >The Largest Shark Ever?</a>
+                      </div>
+
+                      <div>
+                           <h3>All Types of Fishes</h3>
+                           <a href="#" onClick={this.blockLinkAction} >Click Here For Know About Different Fishes</a>
+                      </div>
             </div>
+
+           
         )
     }
+}
 }
 
 export default Sample1
